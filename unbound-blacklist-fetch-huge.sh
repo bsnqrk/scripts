@@ -218,7 +218,6 @@ ${FETCHCMD} \
   https://raw.githubusercontent.com/tiuxo/hosts/master/ads                                                                                  \
   https://raw.githubusercontent.com/tyzbit/hosts/master/data/tyzbit/hosts                                                                   \
   https://raw.githubusercontent.com/vokins/yhosts/master/hosts                                                                              \
-  https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt                                                                          \
   https://raw.githubusercontent.com/xxcriticxx/.pl-host-file/master/hosts.txt                                                               \
   https://raw.githubusercontent.com/yous/YousList/master/hosts.txt                                                                          \
   https://repo.andnixsh.com/adblocker/hosts                                                                                                 \
