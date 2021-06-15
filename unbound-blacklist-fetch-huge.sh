@@ -42,7 +42,7 @@ UNAME=$(uname)
 
 case ${UNAME} in
   (FreeBSD)
-    FILE=/var/unbound/conf.d/blacklist.conf
+    FILE=/usr/local/etc/unbound/conf.d/blacklist.conf
     FETCHCMD="fetch -q -o -"
     ;;
   (OpenBSD)
@@ -305,12 +305,12 @@ echo 'server:' > ${FILE}
 # CHECK CONFIG AND POTENTIALLY RESTART UNBOUND
 case ${UNAME} in
   (FreeBSD)
-    [ "${ECHO}" != "0" ] && echo "/etc/rc.d/local_unbound configtest"
-    /etc/rc.d/local_unbound configtest
+    [ "${ECHO}" != "0" ] && echo "/usr/local/sbin/unbound-checkconf"
+    /usr/local/sbin/unbound-checkconf /usr/local/etc/unbound/uxhole.conf
     if [ ${?} -eq 0 ]
     then
-      [ "${ECHO}" != "0" ] && echo "/etc/rc.d/local_unbound restart"
-      /etc/rc.d/local_unbound restart
+      [ "${ECHO}" != "0" ] && echo "/usr/local/etc/rc.d/unbound restart"
+      /usr/local/etc/rc.d/unbound restart
     fi
     ;;
   (OpenBSD)
