@@ -205,7 +205,6 @@ ${FETCHCMD} \
   https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts                                                                           \
   https://raw.githubusercontent.com/joeylane/hosts/master/hosts                                                                             \
   https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_google_adservice_id.txt                       \
-  https://raw.githubusercontent.com/Laicure/HostsY_hosts/master/shithosts                                                                   \
   https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/hostfile.txt                                     \
   https://raw.githubusercontent.com/meinhimmel/hosts/master/hosts                                                                           \
   https://raw.githubusercontent.com/MetaMask/eth-phishing-detect/master/src/hosts.txt                                                       \
