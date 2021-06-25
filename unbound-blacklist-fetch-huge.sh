@@ -253,6 +253,7 @@ echo 'server:' > ${FILE}
   # LIST HOSTS SOURCES
   cat ${TEMP}/lists-hosts   \
   | grep -v '^#'            \
+  | grep -Ev '^(.)*#'       \
   | grep -v '^$'            \
   | grep -v '^!'            \
   | awk '{print $2}'
