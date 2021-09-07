@@ -256,7 +256,6 @@ echo 'server:' > ${FILE}
   cat ${TEMP}/lists-hosts   \
   | grep -v '^(.)*#' -E     \
   | grep -v '^#'            \
-  | grep -Ev '^(.)*#'       \
   | grep -v '^$'            \
   | grep -v '^!'            \
   | awk '{print $2}'
